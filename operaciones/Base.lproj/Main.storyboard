@@ -1,25 +1,87 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="operaciones" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ISJ-Xt-3Tn">
+                                <rect key="frame" x="16" y="64" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Jfg-ER-YPW">
+                                <rect key="frame" x="16" y="28" width="290" height="29"/>
+                                <segments>
+                                    <segment title="Suma"/>
+                                    <segment title="Resta"/>
+                                    <segment title="Producto"/>
+                                    <segment title="División"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEU-vs-4eF">
+                                <rect key="frame" x="16" y="140" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVy-hq-xO5">
+                                <rect key="frame" x="247" y="169" width="57" height="30"/>
+                                <state key="normal" title="Calcular">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCalcular:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ayT-yO-1lL"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HWn-RT-XDr">
+                                <rect key="frame" x="16" y="102" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hEU-vs-4eF" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="0Up-no-BMC"/>
+                            <constraint firstItem="HWn-RT-XDr" firstAttribute="top" secondItem="ISJ-Xt-3Tn" secondAttribute="bottom" constant="8" id="1Fa-Pd-9xw"/>
+                            <constraint firstItem="ISJ-Xt-3Tn" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="IuU-Xb-5dl"/>
+                            <constraint firstItem="ISJ-Xt-3Tn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Sv4-6R-7g2"/>
+                            <constraint firstItem="ZVy-hq-xO5" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="UKM-ms-Jbz"/>
+                            <constraint firstItem="Jfg-ER-YPW" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="WK0-UT-A5k"/>
+                            <constraint firstItem="ZVy-hq-xO5" firstAttribute="top" secondItem="hEU-vs-4eF" secondAttribute="bottom" constant="8" id="XeZ-Bz-G8d"/>
+                            <constraint firstItem="hEU-vs-4eF" firstAttribute="top" secondItem="HWn-RT-XDr" secondAttribute="bottom" constant="8" id="gjM-0H-Sbt"/>
+                            <constraint firstItem="HWn-RT-XDr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="jRc-f0-z0w"/>
+                            <constraint firstItem="Jfg-ER-YPW" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="nLF-sy-10H"/>
+                            <constraint firstItem="ISJ-Xt-3Tn" firstAttribute="top" secondItem="Jfg-ER-YPW" secondAttribute="bottom" constant="8" id="oHA-GQ-YnM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jfg-ER-YPW" secondAttribute="trailing" constant="-2" id="rQl-Qk-fM3"/>
+                            <constraint firstItem="hEU-vs-4eF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="tet-U3-NtP"/>
+                            <constraint firstItem="HWn-RT-XDr" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="v47-Xl-aX4"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="lblRp" destination="hEU-vs-4eF" id="GzN-xs-4jE"/>
+                        <outlet property="segTipoOperacion" destination="Jfg-ER-YPW" id="zoP-FD-xX4"/>
+                        <outlet property="txtN1" destination="ISJ-Xt-3Tn" id="0Sa-Fx-ibX"/>
+                        <outlet property="txtN2" destination="HWn-RT-XDr" id="UEv-rp-sgW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="180" y="177"/>
         </scene>
     </scenes>
 </document>
