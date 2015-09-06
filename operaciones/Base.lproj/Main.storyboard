@@ -52,6 +52,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="home.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zpd-8E-OLV">
+                                <rect key="frame" x="100" y="220" width="106" height="17"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -64,9 +67,11 @@
                             <constraint firstItem="ZVy-hq-xO5" firstAttribute="top" secondItem="hEU-vs-4eF" secondAttribute="bottom" constant="8" id="XeZ-Bz-G8d"/>
                             <constraint firstItem="hEU-vs-4eF" firstAttribute="top" secondItem="HWn-RT-XDr" secondAttribute="bottom" constant="8" id="gjM-0H-Sbt"/>
                             <constraint firstItem="HWn-RT-XDr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="jRc-f0-z0w"/>
+                            <constraint firstAttribute="centerX" secondItem="zpd-8E-OLV" secondAttribute="centerX" constant="7" id="jz6-R3-kY6"/>
                             <constraint firstItem="Jfg-ER-YPW" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="nLF-sy-10H"/>
                             <constraint firstItem="ISJ-Xt-3Tn" firstAttribute="top" secondItem="Jfg-ER-YPW" secondAttribute="bottom" constant="8" id="oHA-GQ-YnM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Jfg-ER-YPW" secondAttribute="trailing" constant="-2" id="rQl-Qk-fM3"/>
+                            <constraint firstAttribute="centerY" secondItem="zpd-8E-OLV" secondAttribute="centerY" constant="55.5" id="t97-hb-D7Z"/>
                             <constraint firstItem="hEU-vs-4eF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="tet-U3-NtP"/>
                             <constraint firstItem="HWn-RT-XDr" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="v47-Xl-aX4"/>
                         </constraints>
@@ -84,4 +89,7 @@
             <point key="canvasLocation" x="180" y="177"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="home.jpg" width="70" height="14"/>
+    </resources>
 </document>

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8945C931B9BFC9B009065AE /* home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8945C901B9BFC9B009065AE /* home.jpg */; };
+		C8945C941B9BFC9B009065AE /* home@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8945C911B9BFC9B009065AE /* home@2x.jpg */; };
+		C8945C951B9BFC9B009065AE /* home@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8945C921B9BFC9B009065AE /* home@3x.jpg */; };
 		C89CAB921B9BA6CB003F56F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89CAB911B9BA6CB003F56F7 /* AppDelegate.swift */; };
 		C89CAB941B9BA6CB003F56F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89CAB931B9BA6CB003F56F7 /* ViewController.swift */; };
 		C89CAB971B9BA6CB003F56F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C89CAB951B9BA6CB003F56F7 /* Main.storyboard */; };
@@ -26,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C8945C901B9BFC9B009065AE /* home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home.jpg; sourceTree = "<group>"; };
+		C8945C911B9BFC9B009065AE /* home@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "home@2x.jpg"; sourceTree = "<group>"; };
+		C8945C921B9BFC9B009065AE /* home@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "home@3x.jpg"; sourceTree = "<group>"; };
 		C89CAB8C1B9BA6CB003F56F7 /* operaciones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = operaciones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C89CAB901B9BA6CB003F56F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C89CAB911B9BA6CB003F56F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,9 +62,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C8945C891B9BFC63009065AE /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C8945C901B9BFC9B009065AE /* home.jpg */,
+				C8945C911B9BFC9B009065AE /* home@2x.jpg */,
+				C8945C921B9BFC9B009065AE /* home@3x.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		C89CAB831B9BA6CB003F56F7 = {
 			isa = PBXGroup;
 			children = (
+				C8945C891B9BFC63009065AE /* images */,
 				C89CAB8E1B9BA6CB003F56F7 /* operaciones */,
 				C89CABA41B9BA6CB003F56F7 /* operacionesTests */,
 				C89CAB8D1B9BA6CB003F56F7 /* Products */,
@@ -192,6 +209,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8945C941B9BFC9B009065AE /* home@2x.jpg in Resources */,
+				C8945C931B9BFC9B009065AE /* home.jpg in Resources */,
+				C8945C951B9BFC9B009065AE /* home@3x.jpg in Resources */,
 				C89CAB971B9BA6CB003F56F7 /* Main.storyboard in Resources */,
 				C89CAB9C1B9BA6CB003F56F7 /* LaunchScreen.xib in Resources */,
 				C89CAB991B9BA6CB003F56F7 /* Images.xcassets in Resources */,
